@@ -209,3 +209,5 @@ __marimo__/
 notebook/out/**
 
 notebook/data/**
+
+app/*/config.json
