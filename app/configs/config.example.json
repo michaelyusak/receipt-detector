@@ -1,3 +1,9 @@
 {
-    "port": "8080"
+    "port": "8080",
+    "paddle_ocr": {
+        "version": "PP-OCRv3",
+        "use_textline_orientation": true,
+        "use_doc_orientation_classify": false,
+        "use_doc_unwarping": false
+    }
 }
