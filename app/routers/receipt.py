@@ -6,7 +6,7 @@ from app.schemas.response import Response
 
 router = APIRouter()
 
-@router.post("/detect", response_model=Response)
+@router.post("/receipt/detect", response_model=Response)
 async def detect(file: UploadFile = File(), receipt_service: Receipt=Depends(get_receipt_service)):
     contents = await file.read()
     return receipt_service.detect(contents)
